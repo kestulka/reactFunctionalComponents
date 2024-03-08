@@ -93,18 +93,20 @@ import styles from "../Styles/DogList.module.css";
 
 const DogList = () => {
   const dogs = ["šuo", "cucikas", "Bobikas", "kudlius", "Reksas", "aviganis"];
-  const length = dogs.length;
-  const color = length > 6 ? "green" : "red";
+  const dogElements = [];
 
-  return (
-    <div>
-      {dogs.map((dog, index) => (
-        <div key={index} className={styles[color]}>
-          {dog}
-        </div>
-      ))}
-    </div>
-  );
+  dogs.forEach((dog, index) => {
+    const length = dog.length;
+    const colors = length > 6 ? styles.green : styles.red;
+
+    dogElements.push(
+      <div key={index} className={`${styles.dog} ${colors}`}>
+        {dog} - ({length} raides)
+      </div>,
+    );
+  });
+
+  return <div>{dogElements}</div>;
 };
 
 export default DogList;
