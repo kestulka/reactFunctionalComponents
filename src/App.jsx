@@ -16,14 +16,7 @@ const App = () => {
       {/* <Automobiliai marke="bemsas" />
       <Automobiliai marke="mersas" />
       <Automobiliai marke="paseratis" /> */}
-
-      {/* 1punktas */}
-
-      {/* <h1>Sabakynas:</h1>
-      <DogList /> */}
-
-      {/* 2 punktas */}
-
+      {/* 1, 2, 3, 4, 5 punktai atsivaizduoja taip pat */}
       <h1>Sabakynas:</h1>
       <DogList />
     </div>
