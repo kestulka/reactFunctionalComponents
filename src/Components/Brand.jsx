@@ -1,7 +1,7 @@
 import React from "react";
 
-const Markes = ({ marke }) => {
-  return <div>Markes: {marke}</div>;
+const Brand = ({ marke }) => {
+  return <div>Brand: {marke}</div>;
 };
 
-export default Markes;
+export default Brand;

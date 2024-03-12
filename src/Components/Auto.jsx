@@ -1,12 +1,12 @@
 import React from "react";
-import Markes from "./Brand";
+import Brand from "./Brand";
 
 const Automobiliai = (props) => {
   const { marke } = props;
   return (
     <div>
       <p>Automobiliai:</p>
-      <Markes marke={marke} />
+      <Brand marke={marke} />
     </div>
   );
 };

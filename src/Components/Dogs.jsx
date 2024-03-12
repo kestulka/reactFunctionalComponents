@@ -26,6 +26,8 @@ import styles from "../Styles/DogList.module.css";
 //   );
 // };
 
+// export default DogList;
+
 // 2 punktas:
 
 // const DogList = () => {
@@ -89,24 +91,24 @@ import styles from "../Styles/DogList.module.css";
 
 // export default DogList;
 
-// 5 punktas: TODO
+// 5 punktas:
 
-const DogList = () => {
-  const dogs = ["šuo", "cucikas", "Bobikas", "kudlius", "Reksas", "aviganis"];
-  const dogElements = [];
+// const DogList = () => {
+//   const dogs = ["šuo", "cucikas", "Bobikas", "kudlius", "Reksas", "aviganis"];
+//   const dogElements = [];
 
-  dogs.forEach((dog, index) => {
-    const length = dog.length;
-    const colors = length > 6 ? styles.green : styles.red;
+//   dogs.forEach((dog, index) => {
+//     const length = dog.length;
+//     const colors = length > 6 ? styles.green : styles.red;
 
-    dogElements.push(
-      <div key={index} className={`${styles.dog} ${colors}`}>
-        {dog} - ({length} raides)
-      </div>,
-    );
-  });
+//     dogElements.push(
+//       <div key={index} className={`${styles.dog} ${colors}`}>
+//         {dog} - ({length} raides)
+//       </div>,
+//     );
+//   });
 
-  return <div>{dogElements}</div>;
-};
+//   return <div>{dogElements}</div>;
+// };
 
-export default DogList;
+// export default DogList;
